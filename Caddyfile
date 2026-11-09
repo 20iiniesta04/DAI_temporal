@@ -1,0 +1,19 @@
+:80 {
+    # Si entran en /react, redirigimos al index.html de React
+    redir /react /public/react/index.html
+
+    # Para servir archivos estáticos (imágenes, css antiguo, build de React)
+    handle_path /public/* {
+        root * /usr/share/caddy/public
+        file_server
+    }
+
+    # Todo lo demás se lo pasamos a tu servidor Node (API y webs antiguas)
+    handle_path /* {
+        reverse_proxy tienda-dai:8000
+    }
+
+    log {
+        output stdout
+    }
+}

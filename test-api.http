@@ -1,0 +1,38 @@
+// test-api.http
+
+@host = http://localhost:8000
+@productId = 690a697f6c909ef11e36ba62 
+@newPrice = 4.30
+@newRebajado = 3.90
+
+### 1. Obtener todos los productos
+GET {{host}}/api/productos
+
+### 2. Obtener un producto específico
+GET {{host}}/api/productos/{{productId}}
+
+### 3. Añadir un nuevo producto (POST)
+// NOTA: Asegúrate de enviar precio como número
+POST {{host}}/api/productos
+Content-Type: application/json
+
+{
+    "name": "Aceite de oliva 0,4º Hacendado",
+    "price": 4.20,
+    "size": "Botella 1 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/65c2349950feb1958362e06217003b10.jpg?fit=crop&h=300&w=300",
+    "precio_rebajado": 3.50
+}
+
+### 4. Modificar precio (PUT)
+// Se necesita un ID real de un producto existente
+PUT {{host}}/api/productos/69203c91c3ac5fdafcfac1cd
+Content-Type: application/json
+
+{
+    "price": {{newPrice}},
+    "precio_rebajado": {{newRebajado}}
+}
+
+### 5. Eliminar un producto (DELETE)
+DELETE {{host}}/api/productos/69203c91c3ac5fdafcfac1cd

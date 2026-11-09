@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h2 class="titulo-seccion">Registro de Usuario</h2>
+
+    {% if error %}
+        <p class="error-message">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST" action="/usuarios/registro" class="auth-form">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit" class="boton-form">Registrarse</button>
+    </form>
+    
+    <p>¿Ya tienes cuenta? <a href="/usuarios/login">Inicia Sesión</a></p>
+</div>
+{% endblock %}

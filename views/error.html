@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="error-container">
+    <h1 class="error-titulo">🛑 ¡Ups! Algo salió mal</h1>
+
+    {# Muestra el mensaje de error si el controlador lo ha pasado (ej. "Acceso denegado") #}
+    {% if message %}
+        <p class="error-mensaje">{{ message }}</p>
+    {% else %}
+        <p class="error-mensaje">Se ha producido un error inesperado en el servidor.</p>
+    {% endif %}
+
+    {# Enlace para volver a un lugar seguro #}
+    <p>Por favor, <a href="/" class="error-link">vuelve a la página principal</a>.</p>
+</div>
+{% endblock %}

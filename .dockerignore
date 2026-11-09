@@ -1,0 +1,7 @@
+node_modules
+.git
+.env
+frontend
+Dockerfile
+docker-compose.yml
+docker-compose-prod.yml

@@ -1,0 +1,344 @@
+[
+  {
+    "name": "Aceite de oliva virgen extra Hacendado",
+    "price": "4,65 €",
+    "size": "Botella 1 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/187d68e356f13378cd4e31bbc613da76.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva 0,4º Hacendado",
+    "price": "3,85 €",
+    "size": "Botella 1 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/65c2349950feb1958362e06217003b10.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva virgen extra Hacendado",
+    "price": "13,70 €",
+    "size": "Garrafa 3 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/e9c286dc179e75d80ba0d9a0c6ca2717.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva virgen extra Hacendado",
+    "price": "2,80 €",
+    "size": "Spray 200 ml",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/efb4b2c1a0e2cb8d9d522a815c295fa0.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva 0,4º Hacendado",
+    "price": "18,75 €",
+    "size": "Garrafa 5 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/c1788076223b499bd260c6a03d89b087.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva virgen Hacendado",
+    "price": "4,10 €",
+    "size": "Botella 1 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/a6b5607809fdd257ffd5e778791bdc6a.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva virgen Hacendado",
+    "price": "11,75 €",
+    "size": "Garrafa 3 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/5b2daa7ddeb496942b974d178bf3a47d.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva virgen extra Hacendado Gran Selección",
+    "price": "5,95 €",
+    "size": "Botella 750 ml",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/c60e6e09dc2037a291515d3b15af376c.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva virgen extra Picual Casa Juncal",
+    "price": "4,95 €",
+    "size": "Botella 500 ml",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/218712ed55645f7f5a0eb8f40d96aea0.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva 1º Hacendado",
+    "price": "4,00 €",
+    "size": "Botella 1 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/fe860edbcbb7504d90ad34af0b93b6d7.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Aceite de oliva 1º Hacendado",
+    "price": "19,45 €",
+    "size": "Garrafa 5 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/9d3accbd38120190f64f6f4b07781e13.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Vinagre de manzana Hacendado",
+    "price": "0,90 €",
+    "size": "Botella 1 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/6803f40bdcd3d9b3be574bcee41399f4.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Vinagre de vino blanco Hacendado",
+    "price": "0,65 €",
+    "size": "Botella 1 L",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/44c1552cc9f3945d63d01565d313846c.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Vinagre balsámico de Módena Hacendado",
+    "price": "2,35 €",
+    "size": "Botella 500 ml",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/f65c196d0aae6388f9e6852c381f8da4.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Vinagre de Jerez reserva Hacendado",
+    "price": "2,00 €",
+    "size": "Botella 250 ml",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/bfa0c4aabf80adf4cd9a390df6aa7184.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Crema de vinagre balsámico de Módena Hacendado",
+    "price": "1,80 €",
+    "size": "Botella 250 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/f38299e92edeb2b5c78eeb642f7e3752.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Reducción bálsamica de vinagre Pedro Ximénez Hacendado",
+    "price": "2,25 €",
+    "size": "Botella 300 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/8ce7a93a2c6bf9fbffcb10f388eeb0a8.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Limón exprimido Hacendado",
+    "price": "1,20 €",
+    "size": "Botella 280 ml",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/1910ee61299100e2bca29c2b39fab7a5.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bebida aromatizada a base de vino para cocinar Abuela Carola",
+    "price": "2,35 €",
+    "size": "Botella 750 ml",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/bbee83a931fd33117064e444144d1902.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal fina Hacendado",
+    "price": "0,40 €",
+    "size": "Paquete 1 kg",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/5097b3d7450edab7c2d9586299f5f3b9.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal yodada fina Hacendado",
+    "price": "0,45 €",
+    "size": "Paquete 1 kg",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/409a53c0327dff2c4b91e6b4c58efa42.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal gruesa Hacendado",
+    "price": "0,40 €",
+    "size": "Paquete 1 kg",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/8b9798cc6f23201e8191711f58368727.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal fina de mesa Hacendado",
+    "price": "0,75 €",
+    "size": "Bote 300 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/14d233ae4aee44619f27e63caaed1f2e.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal de ajo Hacendado",
+    "price": "1,80 €",
+    "size": "Bote 130 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/bd81680a3655bf89428f333254f34979.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal rosa del Himalaya Hacendado",
+    "price": "2,65 €",
+    "size": "Paquete 1 kg",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/6dbe958696d20fec014fbbf536ea4593.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal de frutas sabor limón Hacendado",
+    "price": "2,10 €",
+    "size": "Bote 250 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/e01b7ced535cf57318ff7c7a1628d3ed.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal gruesa para hornear Hacendado",
+    "price": "1,40 €",
+    "size": "Paquete 2 kg",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/c46d67d22d1cf40d537ab349322b8da2.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Sal 60% menos de sodio Hacendado",
+    "price": "2,30 €",
+    "size": "Bote 250 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/eeb93d74d5e3298a8f93b4b78dffdb7b.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Escamas de sal marina natural Polasal",
+    "price": "2,00 €",
+    "size": "Bote 125 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/36bc3658a807997961ec5fda23dd948e.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bicarbonato de sódio Hacendado",
+    "price": "1,45 €",
+    "size": "Paquete 1 kg",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/5ae57e0348cf657e21ffa47ad36ea448.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bicarbonato de sódio Hacendado",
+    "price": "1,10 €",
+    "size": "Bote 300 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/0cdfaaf94335d5701e8f433bdf49c914.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Preparado para ahumar Hacendado",
+    "price": "3,30 €",
+    "size": "Bote 750 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/6666d298f039f78188651aa1fd47dc03.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bizcocho con pistacho",
+    "price": "4,10 €",
+    "size": "Paquete 420 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/286579d909b4acd739a1717e35bd8f72.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Berlina glacé",
+    "price": "1,35 €",
+    "size": "Paquete 4 ud. (200 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/fe1f277a10ee34a021457159b63a1d70.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bizcocho de yogur Hacendado",
+    "price": "3,35 €",
+    "size": "Paquete 800 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/0c05756038a9bae7f5c3bd613ab76732.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Berlina al cacao",
+    "price": "1,55 €",
+    "size": "Paquete 4 ud. (240 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/f747d407f820ed49d4376d4ad21b8325.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Rosquillas al cacao",
+    "price": "1,55 €",
+    "size": "Paquete 7 ud. (182 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/0db63e08895ab257ed20410b1845510b.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Berlina con cobertura de cacao crunch rellena de crema de cacao",
+    "price": "1,25 €",
+    "size": "Pieza 100 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/d5f5768d5daf7ceb8a6e968a7346459d.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Croissant de mantequilla 26%",
+    "price": "0,55 €",
+    "size": "Pieza 50 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/e3db82c4bd5fc7b2e956d3e76b1e8c62.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bizcocho de cacao",
+    "price": "3,10 €",
+    "size": "Paquete 410 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/b54d1be05a6d060c97256f6ef735bfb6.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bizcocho con azúcar moreno y nueces",
+    "price": "3,30 €",
+    "size": "Bandeja 400 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/a1be45d525db48eb2a1cf77ff37b4301.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bizcocho de chocolate sin gluten y sin lactosa",
+    "price": "3,10 €",
+    "size": "Paquete 300 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/dc81211122046f2f184596736f63b646.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Bizcocho azúcar sin gluten",
+    "price": "2,80 €",
+    "size": "Paquete 300 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/1ccc3f49b202571f5a415c93689309cd.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Trenza con nueces 4%",
+    "price": "0,90 €",
+    "size": "Pieza 80 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/b3f51a8fa6c6d25bdfbc143ccf4d6beb.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Berlina con cobertura y trozos de pistacho rellena de crema sabor pistacho",
+    "price": "1,25 €",
+    "size": "Pieza 90 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/21026014003cc35c1df20b078745d081.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Napolitana de chocolate 26%",
+    "price": "0,85 €",
+    "size": "Pieza 100 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/ae8933e598cb5aee2f0b1db69a36022a.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Muffin chocolate 3%",
+    "price": "1,45 €",
+    "size": "Pieza 120 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/7ec1f98a59da321737d9820d5a67973e.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "6 Croissant rellenos de cacao",
+    "price": "1,75 €",
+    "size": "Bolsa 6 ud. (280 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/448b70af6205b50bf11f7994c0eb52c7.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "8 Magdalenas con azúcar",
+    "price": "2,60 €",
+    "size": "Bolsa 8 ud. (380 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/8330a57014c14859d210c5f39cb613ed.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "8 Magdalenas con pepitas de chocolate",
+    "price": "3,10 €",
+    "size": "Bolsa 8 ud. (380 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/e7187511950a54f85a431e56d25c7fd4.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "12 Mini croissants de mantequilla",
+    "price": "2,15 €",
+    "size": "Bolsa 12 ud. (240 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/55dfb0de5a832d479c76f2e25c653d4b.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "8 Croissants surtidos rellenos de crema de cacao y crema con leche sabor a chocolate blanco",
+    "price": "2,55 €",
+    "size": "Bandeja 8 ud. (300 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/9e729a200c977f97415a449b11d2d973.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Pastel de crema 65%",
+    "price": "0,55 €",
+    "size": "Pieza 55 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/736dc66fe73ff429bef9e9b8c59d3b89.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Caracola con pasas 10%",
+    "price": "0,90 €",
+    "size": "Pieza 103 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/1a356cacaaf45ca0408c99dfc108ecf1.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "3 Susos relleno de crema",
+    "price": "1,65 €",
+    "size": "Bandeja 3 ud. (153 g)",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/0ee4be84c4d02e3c77e4ab412c621d0f.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Pestiños de miel Álvarez",
+    "price": "2,60 €",
+    "size": "Bandeja 240 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/33325c5379339d4a67fbe3ee857a0f06.jpg?fit=crop&h=300&w=300"
+  },
+  {
+    "name": "Pestiños de azúcar Álvarez",
+    "price": "2,60 €",
+    "size": "Bandeja 200 g",
+    "imageUrl": "https://prod-mercadona.imgix.net/images/46d65eea3c7dc46637686a45685b1fbc.jpg?fit=crop&h=300&w=300"
+  }
+]

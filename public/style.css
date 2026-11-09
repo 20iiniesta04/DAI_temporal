@@ -1,0 +1,603 @@
+body {
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.header {
+  background: #00802b;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  background: #006622;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+.titulo-seccion {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+
+.producto-card {
+  width: 190px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 14px;
+  transition: transform .2s ease;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+}
+
+.producto-card img {
+  width: 100%;
+  height: auto;
+}
+
+.precio {
+  color: #00802b;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.precio-normal {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.precio-rebajado {
+  color: #d60000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* --- ESTILOS ADICIONALES PARA EL CARRITO (carrito.html) --- */
+
+/* Contenedor principal de la tabla y resumen */
+.carrito-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start; /* Alinea la tabla y el resumen arriba */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo general de la tabla */
+.carrito-tabla {
+    flex-grow: 1; /* Permite que la tabla ocupe el espacio restante */
+    min-width: 60%;
+    border-collapse: collapse; 
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.carrito-tabla th, .carrito-tabla td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.carrito-tabla th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: 600;
+}
+
+/* --- ESTILO VISUAL DE LA FILA DE PRODUCTO --- */
+
+.producto-info-visual {
+    display: flex;
+    align-items: center;
+}
+
+.carrito-img {
+    width: 80px; 
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.producto-detalle h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    color: #000;
+}
+
+.precio-unitario {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* --- ESTILOS DE CANTIDAD Y TOTAL --- */
+
+.columna-cantidad {
+    width: 15%;
+}
+
+.form-cantidad {
+    display: flex;
+    align-items: center;
+}
+
+.input-cantidad {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.boton-actualizar {
+    background-color: #00802b; /* Color de tu header */
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.boton-actualizar:hover {
+    background-color: #006622;
+}
+
+.columna-total {
+    font-weight: bold;
+    color: #00802b;
+    font-size: 1.1em;
+}
+
+/* --- ESTILOS DEL RESUMEN Y BOTONES DE ACCIÓN --- */
+
+.carrito-resumen {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky; /* Mantiene el resumen visible al hacer scroll */
+    top: 20px;
+}
+
+.carrito-resumen p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.carrito-resumen .total {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #d60000; /* Color rojo de rebajas/énfasis */
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.boton-checkout {
+    width: 100%;
+    padding: 10px;
+    background-color: #d60000; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: opacity 0.2s;
+}
+
+.boton-checkout:hover {
+    opacity: 0.9;
+}
+
+.boton-eliminar {
+    background-color: transparent;
+    border: none;
+    color: #dc3545; 
+    font-size: 1.4em;
+    cursor: pointer;
+    line-height: 1; /* Centrar verticalmente */
+}
+
+/* Estilo para carrito vacío */
+.carrito-vacio {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* --- ESTILOS LLAMATIVOS PARA EL ICONO DEL CARRITO --- */
+
+.header .cart-icon {
+    /* Resetear estilos de enlace */
+    text-decoration: none;
+    color: white; 
+    
+    /* Contenedor visual */
+    background-color: #d60000; /* Fondo rojo llamativo */
+    padding: 6px 10px; 
+    border-radius: 6px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Necesario para posicionar el contador */
+    font-size: 1.5em; /* Aumentar el tamaño del icono (🛒) */
+    transition: background-color 0.3s, transform 0.3s;
+    line-height: 1; /* Asegura el centrado vertical */
+}
+
+.header .cart-icon:hover {
+    background-color: #ff3333; /* Color más claro al pasar el ratón */
+    transform: scale(1.05); /* Efecto ligero de zoom */
+}
+
+/* Estilo para el contador de artículos (la bolita con el número) */
+.header .cart-icon .cart-count {
+    background-color: #00802b; /* Verde de la marca para contraste */
+    color: white;
+    border-radius: 50%; /* Forma de círculo */
+    padding: 2px 6px;
+    font-size: 0.5em; /* Tamaño pequeño */
+    font-weight: bold;
+    line-height: 1;
+    
+    /* Posicionamiento en la esquina superior derecha del icono */
+    position: absolute; 
+    top: -5px; 
+    right: -5px;
+    
+    /* Asegura que el número se vea bien */
+    min-width: 15px; 
+    text-align: center;
+}
+
+/* --- ESTILOS PARA FORMULARIOS DE AUTENTICACIÓN --- */
+
+/* Contenedor principal del formulario */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.auth-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: -10px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.boton-form {
+    background-color: #00802b; /* Color verde de Mercadona */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.boton-form:hover {
+    background-color: #006622;
+}
+
+.error-message {
+    color: #d60000; /* Rojo para errores */
+    background-color: #ffebeb;
+    padding: 10px;
+    border: 1px solid #d60000;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el estado de usuario en la cabecera (base.html) */
+.header .user-status {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 1.05em;
+    margin-left: auto; /* Empuja el contenido a la derecha */
+}
+
+.header .welcome-msg {
+    font-weight: bold;
+}
+
+.header .logout-link {
+    background-color: #d60000;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.header .auth-link {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header .auth-link:hover {
+    background-color: #006622;
+}
+
+/* --- ESTILOS PARA EL ÁREA DE USUARIO EN EL HEADER --- */
+
+.header-link.login-link {
+    color: #ffcc00; /* Un color que destaque */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-link.login-link:hover {
+    background-color: #ffcc00;
+    color: #00802b; /* Verde oscuro del header */
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.header-welcome {
+    font-weight: bold;
+    /* Color de Bienvenida opcional */
+    color: #ccffcc; 
+}
+
+.logout-link {
+    color: #ff9999; /* Rojo suave para cerrar sesión */
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 3px 8px;
+    border: 1px solid #ff9999;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.logout-link:hover {
+    background-color: #d60000;
+    color: white;
+    border-color: #d60000;
+}
+
+.header .user-status {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 1.05em;
+    margin-left: auto; /* <--- ESTO es lo que empuja el bloque a la derecha */
+}
+
+.welcome-banner {
+    background-color: #e6ffe6; 
+    color: #006600; 
+    padding: 15px 20px;
+    border-left: 5px solid #00802b;
+    margin-bottom: 25px;
+    font-size: 1.5em; 
+    border-radius: 4px;
+}
+
+/* --- ESTILOS PARA LA PÁGINA DE ERROR --- */
+
+.error-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #d60000; /* Borde rojo */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.error-titulo {
+    color: #d60000; /* Color rojo de advertencia */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.error-mensaje {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.error-link {
+    color: #00802b; /* Color verde de Mercadona */
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #00802b;
+    padding-bottom: 2px;
+}
+
+.error-link:hover {
+    color: #006622;
+}
+
+/* Botón principal de compra */
+.boton-anadir {
+    background-color: #00802b; /* Verde Mercadona */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px; /* Bordes muy redondeados */
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacio entre texto e icono si lo hubiera */
+}
+
+.boton-anadir:hover {
+    background-color: #005f20; /* Verde más oscuro */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.boton-anadir:active {
+    transform: translateY(0); /* Efecto de click */
+}
+
+/* Botón de administración */
+.boton-cambiar-precio, .boton-admin-precio {
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    cursor: pointer;
+    margin-top: 8px;
+    width: auto;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.boton-cambiar-precio:hover, .boton-admin-precio:hover {
+    background-color: #e2e6ea;
+    border-color: #adb5bd;
+    color: #000;
+}
+
+/* El botón pequeño que sale junto al input al editar */
+.admin-controls button {
+    background-color: #007bff !important; /* Azul para la acción de guardar */
+    color: white !important;
+    border: none !important;
+}
+
+.admin-controls button:hover {
+    background-color: #0056b3 !important;
+}
+
+/* Input de precio en modo admin */
+.admin-controls input[type="number"] {
+    padding: 6px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/* Botón Cerrar Sesión */
+.logout-link {
+    background-color: #d60000; /* Rojo */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.logout-link:hover {
+    background-color: #b00000;
+}
+
+/* Botón Iniciar Sesión */
+.login-link {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.login-link:hover {
+    background-color: white;
+    color: #00802b;
+}

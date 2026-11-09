@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{# INICIO DE LA MODIFICACIÓN: MENSAJE DE BIENVENIDA #}
+{% if usuario and not query %}
+<h2 class="titulo-seccion welcome-banner">👋 ¡Bienvenido de nuevo, {{ usuario }}!</h2>
+{% endif %}
+{# FIN DE LA MODIFICACIÓN #}
+
+{% if not query %}
+<h2 class="titulo-seccion">Productos Destacados</h2>
+<div class="productos-grid">
+  {% for p in destacados %}
+  <div class="producto-card">
+    <img src="{{ p.imageUrl }}" alt="{{ p.name }}">
+    <h3>{{ p.name }}</h3>
+    <p class="tamano">{{ p.size }}</p>
+
+    {% if p.precio_rebajado and p.precio_rebajado != "0" %}
+      <p class="precio-normal">{{ p.price }}</p>
+      <p class="precio-rebajado">{{ p.precio_rebajado }}</p>
+    {% else %}
+      <p class="precio">{{ p.price }}</p>
+    {% endif %}
+
+    <form action="/carrito/agregar" method="POST">
+      <input type="hidden" name="product_id" value="{{ p._id }}">
+      <button type="submit" class="boton-anadir">Añadir al carrito</button>
+    </form>
+    
+    {# 🔥 CAMBIO CLAVE: Botón visible solo para administradores 🔥 #}
+    {% if admin %}
+    <form action="/admin/cambiar_precio" method="GET">
+        <input type="hidden" name="product_id" value="{{ p._id }}">
+        <button type="submit" class="boton-admin-precio boton-anadir">Cambiar precio</button>
+    </form>
+    {% endif %}
+    {# FIN CAMBIO CLAVE #}
+    
+  </div>
+  {% endfor %}
+</div>
+
+{% else %}
+<h2 class="titulo-seccion">Resultados para <span>"{{ query }}"</span></h2>
+<div class="productos-grid">
+  {% for p in productos %}
+  <div class="producto-card">
+    <img src="{{ p.imageUrl }}" alt="{{ p.name }}">
+    <h3>{{ p.name }}</h3>
+    <p class="tamano">{{ p.size }}</p>
+
+    {% if p.precio_rebajado and p.precio_rebajado != "0" %}
+      <p class="precio-normal">{{ p.price }}</p>
+      <p class="precio-rebajado">{{ p.precio_rebajado }}</p>
+    {% else %}
+      <p class="precio">{{ p.price }}</p>
+    {% endif %}
+
+    <form action="/carrito/agregar" method="POST">
+      <input type="hidden" name="product_id" value="{{ p._id }}">
+      <button type="submit" class="boton-anadir">Añadir al carrito</button>
+    </form>
+    
+    {# 🔥 CAMBIO CLAVE: Botón visible solo para administradores 🔥 #}
+    {% if admin %}
+    <form action="/admin/cambiar_precio" method="GET">
+        <input type="hidden" name="product_id" value="{{ p._id }}">
+        <button type="submit" class="boton-admin-precio boton-anadir">Cambiar precio</button>
+    </form>
+    {% endif %}
+    {# FIN CAMBIO CLAVE #}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% endblock %}

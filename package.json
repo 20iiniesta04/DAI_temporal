@@ -1,0 +1,29 @@
+{
+  "name": "tienda-mercadona",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch --env-file=.env tienda.js",
+    "start" : "node tienda.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "chokidar": "^3.6.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3",
+    "node-html-parser": "^7.0.1",
+    "nunjucks": "^3.2.4",
+    "winson": "^1.0.0",
+    "winston": "^3.18.3"
+  }
+}

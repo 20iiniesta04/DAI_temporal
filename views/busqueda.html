@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <title>Búsqueda Anticipada - Mercadona</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script defer src="/static/js/busqueda.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="bg-[#00802b] p-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex items-center gap-4">
+            
+            <h1 class="text-white text-2xl font-bold hidden md:block">Mercadona</h1>
+
+            <div class="flex-1 relative">
+                <input 
+                    type="text" 
+                    id="input-busqueda"
+                    placeholder="Buscar productos (ej: pizza)..." 
+                    class="w-full pl-10 pr-4 py-3 rounded-full outline-none focus:ring-2 focus:ring-yellow-400 shadow-sm text-gray-700 transition-all"
+                >
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-8 p-4 min-h-screen">
+        
+        <h2 id="mensaje-resultados" class="text-xl text-gray-600 font-medium text-center mb-6">
+            Introduce al menos 3 caracteres para buscar...
+        </h2>
+
+        <div id="contenedor-resultados" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            </div>
+
+    </div>
+
+    <template id="plantilla-producto">
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200 h-full">
+            
+            <div class="h-48 p-4 flex items-center justify-center bg-white">
+                <img src="" alt="Producto" class="p-img max-h-full max-w-full object-contain">
+            </div>
+            
+            <div class="p-4 pt-0 flex flex-col flex-grow">
+                <div class="p-nombre font-bold text-sm text-gray-800 mb-1 leading-tight line-clamp-2 min-h-[2.5em]">
+                    Nombre del producto
+                </div>
+                
+                <div class="p-tamano text-xs text-gray-500 mb-3">
+                    Formato
+                </div>
+                
+                <div class="mt-auto flex items-center justify-between gap-2">
+                    <span class="p-precio text-[#00802b] font-bold text-lg whitespace-nowrap">
+                        0,00 €
+                    </span>
+                    
+                    <button class="bg-[#00802b] text-white text-xs font-bold py-2 px-3 rounded-full hover:bg-[#006020] transition-colors shadow-sm">
+                        Añadir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+</html>

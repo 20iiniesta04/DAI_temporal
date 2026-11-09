@@ -1,0 +1,24 @@
+2025-11-21 00:07:03 [info]: Servidor ejecutandose en http://localhost:8000
+2025-11-21 00:20:51 [error]: Error en API: Producto validation failed: imageUrl: Path `imageUrl` is required.
+2025-11-21 00:24:02 [info]: Nuevo producto añadido: Aceite de oliva 0,4º Hacendado (ID: 691fa312aa9e321ce5ac4ad1)
+2025-11-21 00:24:10 [info]: Nuevo producto añadido: Aceite de oliva 0,4º Hacendado (ID: 691fa31aaa9e321ce5ac4ad3)
+2025-11-21 00:37:50 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 00:37:55 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 00:37:56 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 00:37:57 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 00:40:42 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 00:40:45 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 00:41:35 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 00:41:49 [warn]: Producto eliminado: Aceite de oliva 0,4º Hacendado (ID: 690a697f6c909ef11e36ba62)
+2025-11-21 11:18:43 [info]: Servidor ejecutandose en http://localhost:8000
+2025-11-21 11:18:57 [info]: Nuevo producto añadido: Aceite de oliva 0,4º Hacendado (ID: 69203c91c3ac5fdafcfac1cd)
+2025-11-21 11:19:44 [info]: Precio actualizado para: Aceite de oliva 0,4º Hacendado
+2025-11-21 11:20:21 [warn]: Producto eliminado: Aceite de oliva 0,4º Hacendado (ID: 69203c91c3ac5fdafcfac1cd)
+2025-11-21 23:03:21 [info]: Servidor ejecutandose en http://localhost:8000
+2025-12-02 18:06:31 [info]: Servidor ejecutandose en http://localhost:8000
+2025-12-11 22:52:52 [info]: Servidor ejecutandose en http://localhost:8000
+2025-12-11 23:21:47 [info]: Servidor ejecutandose en http://localhost:8000
+2025-12-11 23:26:55 [info]: Servidor ejecutandose en http://localhost:8000
+2025-12-19 02:09:54 [info]: Servidor ejecutandose en http://localhost:8000
+2025-12-24 09:34:54 [info]: Servidor ejecutandose en http://localhost:8000
+2025-12-28 18:52:15 [info]: Servidor ejecutandose en http://localhost:8000

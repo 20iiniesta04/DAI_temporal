@@ -1,0 +1,47 @@
+services:
+  # base de datos
+  mongo:
+    image: mongo:latest
+    container_name: mongo-db
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - red-tienda
+
+  # aplicacion node (backend)
+  tienda:
+    container_name: tienda-dai 
+    build: .
+    environment:
+      # Aquí ya usamos el nombre del contenedor de la BD
+      - DB_URL=mongodb://mongo-db:27017/mercadona
+      - PORT=8000
+    depends_on:
+      - mongo
+    networks:
+      - red-tienda
+
+  # servidor web / PROXY (CADDY)
+  caddy:
+    image: caddy:alpine
+    container_name: caddy-server
+    ports:
+      - "80:80" # El puerto estándar de la web
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile            # Configuración
+      - ./public:/usr/share/caddy/public            # imágenes y CSS antiguos
+      - ./frontend/dist:/usr/share/caddy/public/react # React compilado (Paso 2)
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - tienda
+    networks:
+      - red-tienda
+
+volumes:
+  mongo-data:
+  caddy_data:
+  caddy_config:
+
+networks:
+  red-tienda:

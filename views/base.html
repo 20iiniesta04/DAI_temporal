@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda Mercadona</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="/" class="logo">Mercadona</a>
+
+  <form action="/" method="get" class="search-bar">
+    <input type="text" name="q" placeholder="Buscar productos..." value="{{ query or '' }}">
+    <button type="submit">🔍</button>
+  </form>
+ 
+    <a href="/productos" class="header-link cart-icon-text-link">Catálogo Completo</a>
+  
+      {% if usuario %}
+    <div class="user-status">         <span class="header-link welcome-message">👋 Hola, {{ usuario }}!</span>
+        <a href="/usuarios/logout" class="header-link logout-link">Cerrar Sesión</a>
+    </div>
+  {% else %}
+    <a href="/usuarios/login" class="header-link login-link">Iniciar Sesión</a>
+    <a href="/usuarios/registro" class="header-link auth-link">Regístrate</a>
+  {% endif %}
+    <a href="/carrito" class="cart-icon" aria-label="Ver carrito de compras">
+    🛒
+    {% if cart_item_count and cart_item_count > 0 %}
+        <span class="cart-count">{{ cart_item_count }}</span>
+    {% endif %}
+  </a>
+</header>
+
+<main class="content">
+  {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>

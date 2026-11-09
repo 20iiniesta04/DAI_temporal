@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="titulo-seccion">🛒 Tu Carrito de Compras</h2>
+
+{% if carrito %}
+    <div class="carrito-container">
+        <table class="carrito-tabla">
+            <thead>
+                <tr>
+                    <th>Producto</th> 
+                    <th>Cantidad</th>
+                    <th>Total por Línea</th>
+                    <th></th> </tr>
+            </thead>
+            <tbody>
+                {% for item in carrito %}
+                <tr>
+                    <td class="producto-info-visual">
+                        <img src="{{ item.imageUrl }}" alt="{{ item.name }}" class="carrito-img"> 
+                        
+                        <div class="producto-detalle">
+                            <h4 class="nombre-carrito">{{ item.name }}</h4>
+                            <p class="precio-unitario">{{ item.price }} € / ud.</p>
+                        </div>
+                    </td>
+                    
+                    <td class="columna-cantidad">
+                        <form method="POST" action="/carrito/actualizar" class="form-cantidad">
+                            <input type="hidden" name="product_id" value="{{ item.id }}">
+                            <input type="number" name="quantity" value="{{ item.cantidad }}" min="1" class="input-cantidad">
+                            <button type="submit" class="boton-actualizar" title="Actualizar cantidad">🔄</button>
+                        </form>
+                    </td>
+                    
+                    <td class="columna-total">
+                        <span class="total-linea">{{ item.line_total }} €</span>
+                    </td>
+                    
+                    <td class="columna-eliminar">
+                        <form method="POST" action="/carrito/eliminar">
+                            <input type="hidden" name="product_id" value="{{ item.id }}">
+                            <button type="submit" class="boton-eliminar" title="Eliminar producto">❌</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="carrito-resumen">
+            <h3>Resumen del Pedido</h3>
+            <p>Subtotal: <span>{{ subtotal }} €</span></p>
+            <p class="total">Total: <span>{{ total }} €</span></p>
+            
+            <button class="boton-checkout">Proceder al Pago</button>
+        </div>
+    </div>
+{% else %}
+    <p class="carrito-vacio">Tu carrito está vacío. ¡Añade algunos productos!</p>
+    <p><a href="/">Volver a la tienda</a></p>
+{% endif %}
+
+{% endblock %}
